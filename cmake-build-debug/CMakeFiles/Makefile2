@@ -81,12 +81,12 @@ clean: CMakeFiles/DArrayClass.dir/clean
 CMakeFiles/DArrayClass.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DArrayClass.dir/build.make CMakeFiles/DArrayClass.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DArrayClass.dir/build.make CMakeFiles/DArrayClass.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/rodrigoasbun/CLionProjects/DArrayClass/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target DArrayClass"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/rodrigoasbun/CLionProjects/DArrayClass/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target DArrayClass"
 .PHONY : CMakeFiles/DArrayClass.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/DArrayClass.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rodrigoasbun/CLionProjects/DArrayClass/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rodrigoasbun/CLionProjects/DArrayClass/cmake-build-debug/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/DArrayClass.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rodrigoasbun/CLionProjects/DArrayClass/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/DArrayClass.dir/rule

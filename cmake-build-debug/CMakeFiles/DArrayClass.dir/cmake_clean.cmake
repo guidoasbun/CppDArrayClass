@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/DArrayClass.dir/DArray.cpp.o"
   "CMakeFiles/DArrayClass.dir/main.cpp.o"
   "DArrayClass"
   "DArrayClass.pdb"

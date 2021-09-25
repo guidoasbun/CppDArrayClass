@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/rodrigoasbun/CLionProjects/DArrayClass/DArray.cpp">
+			<Option target="DArrayClass"/>
+		</Unit>
+		<Unit filename="/Users/rodrigoasbun/CLionProjects/DArrayClass/DArray.h">
+			<Option target="DArrayClass"/>
+		</Unit>
 		<Unit filename="/Users/rodrigoasbun/CLionProjects/DArrayClass/main.cpp">
 			<Option target="DArrayClass"/>
 		</Unit>

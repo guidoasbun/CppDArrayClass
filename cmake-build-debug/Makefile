@@ -129,6 +129,30 @@ DArrayClass/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DArrayClass.dir/build.make CMakeFiles/DArrayClass.dir/build
 .PHONY : DArrayClass/fast
 
+DArray.o: DArray.cpp.o
+.PHONY : DArray.o
+
+# target to build an object file
+DArray.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DArrayClass.dir/build.make CMakeFiles/DArrayClass.dir/DArray.cpp.o
+.PHONY : DArray.cpp.o
+
+DArray.i: DArray.cpp.i
+.PHONY : DArray.i
+
+# target to preprocess a source file
+DArray.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DArrayClass.dir/build.make CMakeFiles/DArrayClass.dir/DArray.cpp.i
+.PHONY : DArray.cpp.i
+
+DArray.s: DArray.cpp.s
+.PHONY : DArray.s
+
+# target to generate assembly for a file
+DArray.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DArrayClass.dir/build.make CMakeFiles/DArrayClass.dir/DArray.cpp.s
+.PHONY : DArray.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -162,6 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... DArrayClass"
+	@echo "... DArray.o"
+	@echo "... DArray.i"
+	@echo "... DArray.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
