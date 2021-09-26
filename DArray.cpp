@@ -98,6 +98,13 @@ void DArray::printArray() const
     cout << endl;
 }
 
+ostream& operator<<(ostream& out, const DArray& theArray)
+{
+    for (int i = 0; i < theArray.numOfElements; ++i)
+        out << theArray.a[i] << " ";
+    return out;
+}
+
 DArray::~DArray( )
 {
     // Recall that we are responsible for any dynamic data

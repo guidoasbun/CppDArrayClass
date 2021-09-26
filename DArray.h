@@ -13,6 +13,8 @@ const int CAP = 50;
 
 class DArray
 {
+    friend std::ostream& operator<<(std::ostream& out, const DArray& theArray);
+
 public:
     DArray();
     // Default constructor
@@ -42,6 +44,8 @@ public:
     void printArray() const;
     // Function prints all elements in the array.
     // If the array is empty, it outputs an error message.
+
+
 
     ~DArray( );
     //Destructor
