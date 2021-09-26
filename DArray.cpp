@@ -5,6 +5,13 @@
 
 using namespace std;
 
+ostream& operator<<(ostream& out, const DArray& theArray)
+{
+    for (int i = 0; i < theArray.numOfElements; ++i)
+        out << theArray.a[i] << " ";
+    return out;
+}
+
 DArray::DArray()
 {
     // The default constructor sets the capacity of
@@ -98,11 +105,14 @@ void DArray::printArray() const
     cout << endl;
 }
 
-ostream& operator<<(ostream& out, const DArray& theArray)
+bool DArray::isFull() const
 {
-    for (int i = 0; i < theArray.numOfElements; ++i)
-        out << theArray.a[i] << " ";
-    return out;
+    return (numOfElements == capacity);
+}
+
+bool DArray::isEmpty() const
+{
+    return (numOfElements == 0);
 }
 
 DArray::~DArray( )

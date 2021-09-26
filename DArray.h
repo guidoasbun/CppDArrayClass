@@ -45,7 +45,9 @@ public:
     // Function prints all elements in the array.
     // If the array is empty, it outputs an error message.
 
+    bool isFull() const;
 
+    bool isEmpty() const;
 
     ~DArray( );
     //Destructor
