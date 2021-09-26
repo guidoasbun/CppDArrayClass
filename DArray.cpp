@@ -115,6 +115,11 @@ bool DArray::isEmpty() const
     return (numOfElements == 0);
 }
 
+void DArray::clearArray()
+{
+    numOfElements = 0;
+}
+
 DArray::~DArray( )
 {
     // Recall that we are responsible for any dynamic data

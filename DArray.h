@@ -49,6 +49,8 @@ public:
 
     bool isEmpty() const;
 
+    void clearArray();
+
     ~DArray( );
     //Destructor
 
