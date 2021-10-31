@@ -42,6 +42,35 @@ DArray::DArray(int newCapacity)
     numOfElements = 0;
 }
 
+bool DArray::search(int elemToSearch, int &numOfOperations) const
+{
+    bool found = false;
+    int first{0};
+    int last{numOfElements - 1};
+
+    while ((first < last) && !found)
+    {
+        int middleIdx = (first + last) / 2;
+        if (elemToSearch == a[middleIdx])
+        {
+            numOfOperations++;
+            found = true;
+        } else
+        {
+            if (elemToSearch < a[middleIdx])
+            {
+                numOfOperations++;
+                last = (first + (last - 1)) / 2;
+            } else
+            {
+                numOfOperations++;
+                first = ((first + 1) + last) / 2;
+            }
+        }
+    }
+    return found;
+}
+
 void DArray::addElement(int newElement)
 {
     // The element will be added at the end of the array.

@@ -25,6 +25,9 @@ public:
     // Overloaded constructor
     // Initializes the array to a given capacity.
 
+    //Lab 8: Binary Search
+    bool search(int elemToSearch, int& numOfOperations) const;
+
     void addElement(int newElement);
     // Function adds a given element to the array.
 
