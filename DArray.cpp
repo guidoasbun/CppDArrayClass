@@ -42,6 +42,8 @@ DArray::DArray(int newCapacity)
     numOfElements = 0;
 }
 
+
+// Lab 8
 bool DArray::search(int elemToSearch, int &numOfOperations) const
 {
     bool found = false;
@@ -51,21 +53,19 @@ bool DArray::search(int elemToSearch, int &numOfOperations) const
     while ((first < last) && !found)
     {
         int middleIdx = (first + last) / 2;
-        if (elemToSearch == a[middleIdx])
+        cout << "Middle IDX: " << middleIdx << endl;
+        if (elemToSearch < a[middleIdx])
+        {
+            numOfOperations++;
+            last = (first + (last - 1)) / 2;
+        } else if (elemToSearch > a[middleIdx])
+        {
+            numOfOperations++;
+            first = ((first + 1) + last) / 2;
+        } else if (elemToSearch == a[middleIdx])
         {
             numOfOperations++;
             found = true;
-        } else
-        {
-            if (elemToSearch < a[middleIdx])
-            {
-                numOfOperations++;
-                last = (first + (last - 1)) / 2;
-            } else
-            {
-                numOfOperations++;
-                first = ((first + 1) + last) / 2;
-            }
         }
     }
     return found;
