@@ -46,13 +46,14 @@ DArray::DArray(int newCapacity)
 // Lab 8
 bool DArray::search(int elemToSearch, int &numOfOperations) const
 {
-    bool found = false;
     int first{0};
     int last{numOfElements - 1};
+    bool found = false;
 
     while ((first <= last) && !found)
     {
         int middleIdx = (first + last) / 2;
+
         if (elemToSearch < a[middleIdx])
         {
             numOfOperations++;
