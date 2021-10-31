@@ -50,18 +50,17 @@ bool DArray::search(int elemToSearch, int &numOfOperations) const
     int first{0};
     int last{numOfElements - 1};
 
-    while ((first < last) && !found)
+    while ((first <= last) && !found)
     {
         int middleIdx = (first + last) / 2;
-        cout << "Middle IDX: " << middleIdx << endl;
         if (elemToSearch < a[middleIdx])
         {
             numOfOperations++;
-            last = (first + (last - 1)) / 2;
+            last = middleIdx - 1;
         } else if (elemToSearch > a[middleIdx])
         {
             numOfOperations++;
-            first = ((first + 1) + last) / 2;
+            first = middleIdx + 1;
         } else if (elemToSearch == a[middleIdx])
         {
             numOfOperations++;

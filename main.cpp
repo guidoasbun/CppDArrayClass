@@ -121,7 +121,7 @@ int main( )
     array1.printArray();
     int numOfOperations{0};
 
-    cout << "Found: " << array1.search(99, numOfOperations) << endl;
+    cout << "Found: " << array1.search(100, numOfOperations) << endl;
     cout << "Number of operations: " << numOfOperations << endl;
 
     return 0;
