@@ -2,6 +2,7 @@
 // Created by Rodrigo Asbun on 9/25/21.
 //
 #include "DArray.h"
+#include <vector>
 
 using namespace std;
 
@@ -69,6 +70,26 @@ bool DArray::search(int elemToSearch, int &numOfOperations) const
         }
     }
     return found;
+}
+
+//Exam 2 practice
+bool DArray::function1(const std::vector<int>& arr) const
+{
+    if (numOfElements == 0)
+        return false;
+    else if (numOfElements != static_cast<int>(arr.size()))
+        return false;
+    else
+    {
+        int idx{0};
+        while (idx < numOfElements)
+        {
+            if (arr[idx] != a[idx])
+                return false;
+            idx++;
+        }
+        return true;
+    }
 }
 
 void DArray::addElement(int newElement)

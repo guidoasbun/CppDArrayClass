@@ -28,6 +28,9 @@ public:
     //Lab 8: Binary Search
     bool search(int elemToSearch, int& numOfOperations) const;
 
+    //Exam 2 practice
+    bool function1(const std::vector<int>& arr) const;
+
     void addElement(int newElement);
     // Function adds a given element to the array.
 
