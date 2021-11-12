@@ -3,6 +3,7 @@
 //
 #include "DArray.h"
 #include <vector>
+#include <algorithm>
 
 using namespace std;
 
@@ -89,6 +90,25 @@ bool DArray::function1(const std::vector<int>& arr) const
             idx++;
         }
         return true;
+    }
+}
+
+void function2(map<int, int>& aMap, const list<int>& aList, set<int>& aSet, int element)
+{
+    if ((find(aList.begin(), aList.end(), element) != aList.end()))
+    {
+        aSet.insert(aList.begin(), aList.end());
+
+        int listSize = static_cast<int>(aList.size());
+        auto iterList = aList.begin();
+        auto iterSet = aSet.begin();
+
+        for (int i = 0; i < listSize; ++i)
+        {
+            aMap[*iterSet] = *iterList;
+            ++iterList;
+            ++iterSet;
+        }
     }
 }
 

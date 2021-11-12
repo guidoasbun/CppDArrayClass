@@ -5,6 +5,10 @@
 
 using namespace std;
 
+void printMap(const map<int, int>& aMap);
+void printList(const list<int>& aList);
+void printSet(const set<int>& aSet);
+
 int main( )
 {
 //    std::cout << "CLASS DARRAY\n";
@@ -148,6 +152,45 @@ int main( )
 
     cout << "\n" << array1.function1(array2) << endl;
 
+    map<int, int> myMap;
+    list<int> myList = {2,4,9,1,3};
+    set<int> mySet;
+    int myInt{9};
+
+    function2(myMap, myList, mySet, myInt);
+
+    cout << "Map is: ";
+    printMap(myMap);
+    cout << "List is: ";
+    printList(myList);
+    cout << "Set is: ";
+    printSet(mySet);
+
+
+
     return 0;
+}
+
+void printMap(const map<int, int>& aMap)
+{
+    for (auto elem : aMap)
+        cout << "(" << elem.first << ", " << elem.second << ")";
+
+    cout << endl;
+}
+
+void printList(const list<int>& aList)
+{
+    for (const auto& element : aList)
+        cout << element << " ";
+    cout << endl;
+}
+
+void printSet(const set<int>& aSet)
+{
+    for (auto elem : aSet)
+        cout << elem << " ";
+
+    cout << endl;
 }
 

@@ -6,10 +6,17 @@
 #define DARRAY_H
 
 #include <iostream>
+#include <array>
+#include <map>
+#include <list>
+#include <set>
 
 const int CAP = 50;
 // We declare the capacity as a global constant so
 // that we can easily change the value if needed.
+
+//Exam 2 Practice
+void function2(std::map<int, int>& aMap, const std::list<int>& aList, std::set<int>& aSet, int element);
 
 class DArray
 {
@@ -30,6 +37,7 @@ public:
 
     //Exam 2 practice
     bool function1(const std::vector<int>& arr) const;
+
 
     void addElement(int newElement);
     // Function adds a given element to the array.
